@@ -1,0 +1,41 @@
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100px;
+    background-color: #CEA2AC;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #EFD9CE;
+}
+
+
+.array-container {
+    display: inline-flexbox;
+    position: absolute;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    
+}
+
+.bar {
+    width: 2px;
+    margin: 1px;
+    display: inline-block;
+    background-color: teal;
+}
+
+.bottom {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #CEA2AC;
+
+}
