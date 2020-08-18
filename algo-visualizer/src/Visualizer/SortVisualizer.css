@@ -57,6 +57,10 @@ button:hover {
     background-color: #EFD9CE ;
 }
 
+button :focus {
+    color: teal;
+}
+
 .bottom {
     
    position: fixed;
@@ -69,11 +73,9 @@ button:hover {
 
 }
 
-.bottom-container {
-    
-    
+.bottom-container {  
     align-content: center;
     display: inline-block;
-    margin-left: 150px;
+    margin-left: 100px;
 }
 

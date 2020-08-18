@@ -1,12 +1,8 @@
 import quickSort from "./QuickSort";
-// Change this value for the speed of the animations.
+
+
+
 const ANIMATION_SPEED_MS = 5;
-
-// This is the main color of the array bars.
-const PRIMARY_COLOR = 'teal';
-
-// This is the color of array bars that are being compared throughout the animations.
-const SECONDARY_COLOR = 'pink';
 
 const quickSortAnimated = (array) => {
     const animations = quickSort(array);

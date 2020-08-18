@@ -1,8 +1,7 @@
 import getMergeSortAnimations from './MergeSort'
 
-// Change this value for the speed of the animations.
-const ANIMATION_SPEED_MS = 5;
 
+const ANIMATION_SPEED_MS = 5;
 
 // This is the main color of the array bars.
 const PRIMARY_COLOR = 'teal';
@@ -20,7 +19,6 @@ const mergeSortAnimated = (array) => {
             const [barOneIdx, barTwoIdx] = animations[i];
             const barOneStyle = arrayBars[barOneIdx].style;
             const barTwoStyle = arrayBars[barTwoIdx].style;
-            //const color = i % 3 === 0 ? SECONDARY_COLOR : PRIMARY_COLOR;
             if(i % 3 ===0) {
               setTimeout(() => {
                 barOneStyle.backgroundColor = SECONDARY_COLOR;
@@ -32,10 +30,6 @@ const mergeSortAnimated = (array) => {
                 barTwoStyle.backgroundColor = PRIMARY_COLOR;
               }, i * ANIMATION_SPEED_MS);
             }
-            // setTimeout(() => {
-            //   barOneStyle.backgroundColor = color;
-            //   barTwoStyle.backgroundColor = color;
-            // }, i * ANIMATION_SPEED_MS);
           } else {
             setTimeout(() => {
               const [barOneIdx, newHeight] = animations[i];
