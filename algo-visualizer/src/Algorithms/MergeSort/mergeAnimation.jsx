@@ -12,8 +12,9 @@ const SECONDARY_COLOR = 'pink';
 
 const mergeSortAnimated = (array) => {
         const animations = getMergeSortAnimations(array);
+        const arrayBars = document.getElementsByClassName('bar');
         for (let i = 0; i < animations.length; i++) {
-          const arrayBars = document.getElementsByClassName('bar');
+          
           const isColorChange = i % 3 !== 2;
           if (isColorChange) {
             const [barOneIdx, barTwoIdx] = animations[i];
@@ -42,8 +43,7 @@ const mergeSortAnimated = (array) => {
               barOneStyle.height = `${newHeight}px`;
             }, i * ANIMATION_SPEED_MS);
           }
-       }
-      
+       }     
 }
 
 export default mergeSortAnimated;

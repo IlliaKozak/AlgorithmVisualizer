@@ -24,8 +24,8 @@ const getBubbleSortAnimations = (array) => {
         setTimeout(() => {       
         if (array[j] < array[j + 1]) {
           
-           arrayBars[j].style.backgroundColor = PRIMARY_COLOR;
-           arrayBars[j+1].style.backgroundColor = PRIMARY_COLOR;
+           arrayBars[j].style.backgroundColor = SECONDARY_COLOR;
+           arrayBars[j+1].style.backgroundColor = SECONDARY_COLOR;
           // swap values
         let temp = array[j];
         array[j] = array[j+1];
@@ -40,7 +40,7 @@ const getBubbleSortAnimations = (array) => {
         barTwoStyle.height = tempStyle;
           } else {
             
-               arrayBars[j].style.backgroundColor = SECONDARY_COLOR;
+               arrayBars[j].style.backgroundColor = PRIMARY_COLOR;
                //arrayBars[j+1].style.backgroundColor = SECONDARY_COLOR;
            }
           }, i * ANIMATION_SPEED_MS)        

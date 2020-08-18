@@ -4,7 +4,7 @@
     left: 0;
     border-radius: 10px;
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: #CEA2AC;
 }
 
@@ -13,13 +13,18 @@ h1 {
     color: #EFD9CE;
 }
 
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #EFD9CE;
+}
+
 
 .array-container {
-    display: inline-flexbox;
-    position: absolute;
+    position: fixed;
     left: 100px;
     right: 100px;
     bottom: 100px;
+    
     
 }
 
@@ -30,12 +35,45 @@ h1 {
     background-color: teal;
 }
 
+button {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 300px;
+      
+        border: 0;
+        border-radius: 3px;
+        background-color: rgb(245, 178, 178);
+        color: #fff;
+        font-weight: 700;
+        font-size: 1rem;
+      line-height: 2;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        cursor: pointer;
+        
+        
+}
+
+button:hover {
+    background-color: #EFD9CE ;
+}
+
 .bottom {
+    
    position: fixed;
+   display: block;
    bottom: 0;
    left: 0;
-    width: 100%;
-    height: 100px;
-    background-color: #CEA2AC;
+   width: 100%;
+   height: 105px;
+   background-color: #CEA2AC;
 
 }
+
+.bottom-container {
+    
+    
+    align-content: center;
+    display: inline-block;
+    margin-left: 150px;
+}
+

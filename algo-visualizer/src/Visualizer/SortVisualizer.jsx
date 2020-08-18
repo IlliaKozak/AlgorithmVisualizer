@@ -35,11 +35,6 @@ class SortVisualizer extends Component {
         <div className="main-container">
             <header className="top">
                 <h1 style={{position: "center"}}>Algorithm visualizer</h1>
-                <button onClick={() => this.resetArray(300)}>Generate array</button>
-                <button onClick={() => mergeSortAnimated(this.state.randomArray)}>Merge Sort</button>
-                <button onClick={() => getBubbleSortAnimations(this.state.randomArray)}>Bubble Sort</button>
-                <button onClick={() => quickSortAnimated(this.state.randomArray)}>Quick Sort</button> 
-                <button onClick={() => insertionSortAnimated(this.state.randomArray)}>Insertion Sort</button> 
             
 
                              
@@ -54,9 +49,25 @@ class SortVisualizer extends Component {
                 })}
             </div>
             <div className="bottom">   
-            <button onClick={() => this.resetArray(50)}>50</button>
-            <button onClick={() => this.resetArray(150)}>150</button>
-            <button onClick={() => this.resetArray(300)}>300</button>
+                <div className = "bottom-container">
+                    <button onClick={() => this.resetArray(300)}>Generate array</button>
+                </div>
+
+                <div className = "bottom-container">
+                    <h3>Array size</h3>
+                    <button ref="button" onClick={() => this.resetArray(50)}>50</button>
+                    <button ref="button" onClick={() => this.resetArray(150)}>150</button>
+                    <button onClick={() => this.resetArray(300)}>300</button>
+                </div>
+            
+                <div className = "bottom-container">
+                    <button ref="button" onClick={() => mergeSortAnimated(this.state.randomArray, this.ref)}>Merge Sort</button>
+            <button ref="button" onClick={() => getBubbleSortAnimations(this.state.randomArray)}>Bubble Sort</button>
+            <button ref="button" onClick={() => quickSortAnimated(this.state.randomArray)}>Quick Sort</button> 
+            <button ref="button" onClick={() => insertionSortAnimated(this.state.randomArray)}>Insertion Sort</button> 
+                </div>
+            
+            
 
             </div>
         </div>
