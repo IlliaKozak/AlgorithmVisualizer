@@ -57,6 +57,7 @@ class SortVisualizer extends Component {
                     <button ref="button" onClick={() => this.resetArray(50)}>50</button>
                     <button ref="button" onClick={() => this.resetArray(150)}>150</button>
                     <button onClick={() => this.resetArray(300)}>300</button>
+
                 </div>
 
                 {/*<div className = "bottom-container">
@@ -69,10 +70,14 @@ class SortVisualizer extends Component {
             
                 <div className = "bottom-container">
                     <h3>Algorithms</h3>
+                    <button ref="button" onClick={() => quickSortAnimated(this.state.randomArray, this.state.animationSpeed)}>Quick Sort</button> 
                     <button ref="button" onClick={() => mergeSortAnimated(this.state.randomArray, this.state.animationSpeed)}>Merge Sort</button>
                     <button ref="button" onClick={() => getBubbleSortAnimations(this.state.randomArray, this.state.animationSpeed)}>Bubble Sort</button>
-                    <button ref="button" onClick={() => quickSortAnimated(this.state.randomArray, this.state.animationSpeed)}>Quick Sort</button> 
                     <button ref="button" onClick={() => insertionSortAnimated(this.state.randomArray, this.state.animationSpeed)}>Insertion Sort</button> 
+                </div>
+
+                <div className = "bottom-container">
+                     <button onClick={() => window.location.reload()}>Stop animation</button>
                 </div>
             
             

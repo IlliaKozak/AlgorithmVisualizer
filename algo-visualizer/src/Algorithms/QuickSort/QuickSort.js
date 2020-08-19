@@ -1,15 +1,9 @@
-// // Change this value for the speed of the animations.
+
  const ANIMATION_SPEED_MS = 100;
 
-// // This is the main color of the array bars.
-// const PRIMARY_COLOR = 'teal';
+let animations = [];
 
-// // This is the color of array bars that are being compared throughout the animations.
-const SECONDARY_COLOR = 'pink';
-
-const animations = [];
-
-const quickSort = (array, leftIndex, rightIndex)=> {
+const quickSort = (array, leftIndex, rightIndex)=> { //using Lomuto scheme
     
     
 
@@ -35,7 +29,7 @@ function swap (array, firstValue, secondValue) {
     array[secondValue] = temp;
 }
 
-function partition (array, leftIndex, rightIndex, animations) {
+function partition (array, leftIndex, rightIndex, animations) { 
 
     let pivot = rightIndex;
     let i = leftIndex;
@@ -58,7 +52,6 @@ function partition (array, leftIndex, rightIndex, animations) {
 
 
 }
-
 
 
 export default quickSort;

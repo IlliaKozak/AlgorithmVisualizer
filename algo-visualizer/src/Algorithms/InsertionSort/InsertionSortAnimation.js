@@ -15,6 +15,7 @@ const insertionSortAnimated = (array) => {
         const barTwoStyle = arrayBars[barTwoIndex].style;
 
         setTimeout(() => {
+        //swap bar sizes
         let tempStyle = barOneStyle.height;
         barOneStyle.height = barTwoStyle.height
         barTwoStyle.height = tempStyle;
